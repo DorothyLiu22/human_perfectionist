@@ -1,0 +1,6 @@
+streamlit
+streamlit_chat
+streamlit_extras
+gcsfs
+st-files-connection
+datetime
