@@ -26,7 +26,7 @@ def chat_history():
     print(server_state[room_key])
     n = datetime.now()
     bucket = storage.Client().bucket("streamlit_kevin")
-    blob = bucket.blob("human_coordinator/chat"+str(n)+".csv")
+    blob = bucket.blob("human_complete-finisher/chat"+str(n)+".csv")
     blob.upload_from_string(test.to_csv(), 'text/csv')
 
 with server_state_lock["rooms"]:
